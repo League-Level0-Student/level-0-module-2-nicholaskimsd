@@ -102,7 +102,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
                  (selection == 2 && opponentSelection == 1)){
             JOptionPane.showMessageDialog(null, "You Win!");
         }else{
-            JOptionPane.showMessageDialog(null, "You Lose!");
+            JOptionPane.showMessageDialog(null, "Man you are terrible c'mon man!!!");
         }
     }
     
