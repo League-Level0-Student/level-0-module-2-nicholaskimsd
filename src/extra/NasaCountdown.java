@@ -19,26 +19,26 @@ public class NasaCountdown {
 		// 2. Use a pop-up to ask the user where to start counting from
 
 		
-		String hi=JOptionPane.showInputDialog("what number do you want to count down from 1-10");
+		@SuppressWarnings("unused")
+		String hi=JOptionPane.showInputDialog("what number do you want to count down from ");
 		
 		
 		// 3. Change the countdown to use the new starting point
-		if(hi.equals("10")) {
-		}
-		else {
-		}
+	
+		// 1. Print a countdown from 10 to 0 on the console
+	for(int i= 10 ;i >0 ;i --) {
+		System.out.println(i);
+		
 		
 	}
 	
-		// 1. Print a countdown from 10 to 0 on the console
-	
 			// 4. Use the speak method to hear the countdown.
-		
+		speak("countdown");
 			// 6. Use the following code to make the program wait one second for each number: Thread.sleep(1000);
-		
+		Thread.sleep(1000);
 		// 5. when the counting is done, speak "blastoff!"
 	
-
+	}
 static void speak(String words) {
    	 try {
    		 Runtime.getRuntime().exec("say " + words).waitFor();
